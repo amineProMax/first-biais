@@ -380,7 +380,7 @@ body.ar .pillar{border-left:none;border-right:3px solid var(--gold)}
 <h2 class="sec-title" data-i18n="wh_title">Pourquoi choisir FIRST-BIAIS ?</h2>
 </div>
 <div class="grid why-grid">
-<div class="why-item"><div class="ic">🇩🇿</div><b data-i18n="wh1">Fabrication au Maroc</b></div>
+<div class="why-item"><div class="ic">🇲🇦</div><b data-i18n="wh1">Fabrication au Maroc</b></div>
 <div class="why-item"><div class="ic">🧵</div><b data-i18n="wh2">Expérience en confection</b></div>
 <div class="why-item"><div class="ic">🌐</div><b data-i18n="wh3">Réseau de production</b></div>
 <div class="why-item"><div class="ic">🤝</div><b data-i18n="wh4">Accompagnement des marques</b></div>
@@ -481,7 +481,7 @@ body.ar .pillar{border-left:none;border-right:3px solid var(--gold)}
 <div class="field"><label data-i18n="f_date">Date souhaitée</label><input type="date" name="date"></div>
 </div>
 <div class="field full" style="margin-bottom:16px"><label data-i18n="f_desc">Description du projet</label><textarea name="description"></textarea></div>
-<div class="field full" style="margin-bottom:16px"><label data-i18n="f_file">Design / photo / fichier technique</label><input type="file" name="fichier" accept="image/*,.pdf,.ai,.psd"></div>
+<div class="field full" style="margin-bottom:16px"><label data-i18n="f_file">Design / photo / fichier technique</label><input type="file" name="fichier" accept="image/*,.pdf,.ai,.psd"><small style="display:block;margin-top:6px;color:#8a8a8a;font-size:.78rem">Pour nous envoyer votre design, utilisez de preference WhatsApp ou l'email apres l'envoi de ce formulaire.</small></div>
 <div class="field full" style="margin-bottom:20px"><label data-i18n="f_msg">Message</label><textarea name="message"></textarea></div>
 <button type="submit" class="btn btn-navy" style="width:100%;justify-content:center" data-i18n="f_submit">DEMANDER UN DEVIS</button>
 </form>
@@ -613,7 +613,7 @@ document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 var svcs=document.querySelectorAll('.svc');var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=Array.prototype.indexOf.call(svcs,e.target);setTimeout(function(){e.target.classList.add('in');},i%4*90);so.unobserve(e.target);}});},{threshold:.1});
 svcs.forEach(function(s){so.observe(s);});
 var form=document.getElementById('quoteForm');
-form.addEventListener('submit',function(ev){ev.preventDefault();if(!form.checkValidity()){form.reportValidity();return;}var m=document.getElementById('formMsg');var btn=form.querySelector('button[type=submit]');var old=btn.textContent;btn.disabled=true;btn.textContent='Envoi en cours...';fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}}).then(function(r){if(r.ok){m.classList.add('show');form.reset();m.scrollIntoView({behavior:'smooth',block:'center'});setTimeout(function(){m.classList.remove('show');},9000);}else{alert("Erreur lors de l'envoi. Reessayez ou contactez-nous par WhatsApp.");}}).catch(function(){alert('Probleme de connexion. Verifiez votre internet et reessayez.');}).finally(function(){btn.disabled=false;btn.textContent=old;});});
+form.addEventListener('submit',function(ev){ev.preventDefault();if(!form.checkValidity()){form.reportValidity();return;}var m=document.getElementById('formMsg');var btn=form.querySelector('button[type=submit]');var old=btn.textContent;btn.disabled=true;btn.textContent='Envoi en cours...';var fd=new FormData(form);fd.delete('fichier');fetch(form.action,{method:'POST',body:fd,headers:{'Accept':'application/json'}}).then(function(r){if(r.ok){m.classList.add('show');form.reset();m.scrollIntoView({behavior:'smooth',block:'center'});setTimeout(function(){m.classList.remove('show');},9000);}else{r.json().then(function(d){alert((d&&d.errors&&d.errors[0]&&d.errors[0].message)?d.errors[0].message:"Erreur lors de l'envoi. Reessayez ou contactez-nous sur WhatsApp.");}).catch(function(){alert("Erreur lors de l'envoi. Reessayez ou contactez-nous sur WhatsApp.");});}}).catch(function(){alert('Probleme de connexion. Verifiez votre internet et reessayez.');}).finally(function(){btn.disabled=false;btn.textContent=old;});});
 try{var sv=localStorage.getItem('fb_lang');if(sv&&I18N[sv])setLang(sv);}catch(e){}
 </script>
 </body>

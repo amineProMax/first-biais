@@ -672,6 +672,8 @@ try{var sv=localStorage.getItem('fb_lang');if(sv&&I18N[sv])setLang(sv);}catch(e)
 .fbai-typing span:nth-child(2){animation-delay:.2s}
 .fbai-typing span:nth-child(3){animation-delay:.4s}
 @keyframes fbaibl{0%,60%,100%{opacity:.25;transform:translateY(0)}30%{opacity:1;transform:translateY(-4px)}}
+.fbai-wa{display:inline-flex;align-items:center;gap:6px;margin-top:10px;background:#25d366;color:#fff;text-decoration:none;font-weight:700;font-size:13px;padding:9px 15px;border-radius:22px}
+.fbai-wa:hover{background:#1ebe5a}
 /* RTL (arabe) : tout passe à gauche */
 body.ar .fbai-launch{right:auto;left:24px}
 body.ar .fbai-panel{right:auto;left:24px;transform-origin:bottom left;direction:rtl}
@@ -722,6 +724,26 @@ var KB=[
   a:{fr:'Vous lancez une marque ? Nous vous accompagnons de l\'idée au produit fini : maquette, choix des matières, développement, prototype/échantillon, validation puis production.',ar:'تطلق علامة تجارية؟ نرافقك من الفكرة إلى المنتج النهائي: النموذج، اختيار المواد، التطوير، العينة، المصادقة ثم الإنتاج.',en:'Launching a brand? We guide you from idea to finished product: mock-up, material choice, development, prototype/sample, validation then production.'}},
  {kw:{fr:['contact','contacter','téléphone','telephone','email','whatsapp','joindre','numéro'],ar:['اتصال','هاتف','بريد','واتساب','رقم'],en:['contact','phone','email','whatsapp','reach','number']},
   a:{fr:'Contactez-nous par WhatsApp au 0762 144 945, ou via le formulaire de devis du site. Notre équipe à Casablanca vous répond rapidement.',ar:'تواصل معنا عبر واتساب 0762 144 945، أو عبر نموذج العرض في الموقع. فريقنا بالدار البيضاء يرد سريعاً.',en:'Contact us on WhatsApp at 0762 144 945, or via the quote form on the site. Our Casablanca team replies quickly.'}},
+ {kw:{fr:['délai','delai','delais','délais','temps','combien de temps','quand','rapide','urgent','production','livrer quand'],ar:['مدة','وقت','متى','كم من الوقت','سريع','مستعجل'],en:['delay','lead time','how long','deadline','when ready','fast','urgent']},
+  a:{fr:'Les délais dépendent de la quantité et de la complexité du modèle — généralement quelques semaines après validation de l\'échantillon. Nous vous confirmons un planning précis au moment du devis.',ar:'تعتمد المدة على الكمية وتعقيد النموذج — عادة بضعة أسابيع بعد اعتماد العينة. نؤكد لك جدولاً دقيقاً عند إعداد العرض.',en:'Lead times depend on quantity and model complexity — usually a few weeks after sample approval. We confirm a precise schedule with your quote.'}},
+ {kw:{fr:['tissu','tissus','matière','matiere','matieres','coton','jersey','polyester','matériau','materiau'],ar:['قماش','أقمشة','مادة','قطن','خامة'],en:['fabric','fabrics','material','materials','cotton','jersey','polyester']},
+  a:{fr:'Nous travaillons de nombreuses matières (coton, jersey, molleton, polyester, mélanges…) et pouvons sourcer le tissu adapté à votre produit, ou travailler avec le vôtre. Dites-nous votre besoin et on vous conseille.',ar:'نعمل بأنواع عديدة من الأقمشة (قطن، جيرسي، فليس، بوليستر، مخاليط…) ويمكننا توريد القماش المناسب أو العمل بقماشكم. أخبرنا باحتياجك وننصحك.',en:'We work with many materials (cotton, jersey, fleece, polyester, blends…) and can source the right fabric for your product, or work with yours. Tell us your need and we\'ll advise.'}},
+ {kw:{fr:['qualité','qualite','contrôle','controle','certification','norme','garantie'],ar:['جودة','مراقبة','شهادة','معيار','ضمان'],en:['quality','control','certification','standard','guarantee']},
+  a:{fr:'Chaque commande passe par un contrôle qualité à plusieurs étapes (coupe, couture, finitions) avant expédition, pour un rendu professionnel conforme à votre cahier des charges.',ar:'يمر كل طلب بمراقبة جودة في عدة مراحل (قص، خياطة، تشطيب) قبل الشحن، لنتيجة احترافية مطابقة لمواصفاتكم.',en:'Every order goes through multi-stage quality control (cutting, sewing, finishing) before shipping, for a professional result matching your spec.'}},
+ {kw:{fr:['échantillon','echantillon','prototype','maquette','sample','essai','modèle test'],ar:['عينة','نموذج أولي','بروتوتيب','تجربة'],en:['sample','prototype','mock-up','mockup','proto']},
+  a:{fr:'Oui, nous réalisons un échantillon/prototype avant la production en série pour que vous validiez la coupe, le tissu et les finitions. C\'est une étape clé pour garantir le résultat.',ar:'نعم، نصنع عينة/نموذجاً أولياً قبل الإنتاج بالجملة لتعتمدوا القصة والقماش والتشطيب. خطوة أساسية لضمان النتيجة.',en:'Yes, we make a sample/prototype before mass production so you can approve the fit, fabric and finishing. It\'s a key step to guarantee the result.'}},
+ {kw:{fr:['personnalis','logo','broderie','sérigraphie','serigraphie','impression','imprimer','marquage','étiquette','etiquette'],ar:['تخصيص','شعار','تطريز','طباعة','علامة','ليبل'],en:['custom','logo','embroidery','print','printing','screen print','label','branding']},
+  a:{fr:'Nous personnalisons vos pièces : broderie, sérigraphie, impression, étiquettes et marquage à votre marque. Envoyez votre logo/design et on vous propose la meilleure technique.',ar:'نخصص قطعكم: تطريز، طباعة، سيريغرافي، ليبلات وعلامة خاصة بكم. أرسلوا شعاركم/تصميمكم ونقترح أفضل تقنية.',en:'We personalize your pieces: embroidery, screen printing, printing, labels and your-brand marking. Send your logo/design and we\'ll suggest the best technique.'}},
+ {kw:{fr:['produit','produits','vêtement','vetement','tshirt','t-shirt','hoodie','sweat','pantalon','uniforme','sport','robe','polo'],ar:['منتج','منتجات','ملابس','تيشيرت','هودي','سروال','زي','رياضة'],en:['product','products','clothing','garment','tshirt','t-shirt','hoodie','sweat','pants','uniform','sportswear','dress','polo']},
+  a:{fr:'Nous confectionnons une large gamme : t-shirts, polos, sweats/hoodies, pantalons, tenues de sport, uniformes professionnels et plus. Dites-nous votre produit et on étudie la faisabilité.',ar:'نصنع مجموعة واسعة: تيشيرتات، بولو، سويت/هودي، سراويل، ملابس رياضية، أزياء مهنية وأكثر. أخبرونا بمنتجكم وندرس إمكانيته.',en:'We make a wide range: t-shirts, polos, sweatshirts/hoodies, pants, sportswear, professional uniforms and more. Tell us your product and we\'ll assess feasibility.'}},
+ {kw:{fr:['paiement','payer','acompte','facture','modalité','conditions de paiement'],ar:['دفع','أداء','تسبيق','فاتورة','شروط الدفع'],en:['payment','pay','deposit','invoice','terms']},
+  a:{fr:'Les modalités de paiement (acompte à la commande, solde avant livraison) sont précisées dans le devis selon le volume. Notre équipe vous explique tout clairement.',ar:'تُحدّد شروط الأداء (تسبيق عند الطلب، الباقي قبل التسليم) في العرض حسب الحجم. فريقنا يشرح لك كل شيء بوضوح.',en:'Payment terms (deposit at order, balance before delivery) are set in the quote based on volume. Our team explains everything clearly.'}},
+ {kw:{fr:['livraison','livrer','expédition','expedition','export','étranger','etranger','international','transport'],ar:['توصيل','شحن','تصدير','خارج','دولي'],en:['delivery','shipping','export','abroad','international','transport']},
+  a:{fr:'Nous expédions au Maroc et à l\'international. Les délais et frais de livraison dépendent de la destination et du volume ; on vous les détaille dans le devis.',ar:'نشحن داخل المغرب وإلى الخارج. تعتمد المدة والتكلفة على الوجهة والحجم؛ نفصّلها لكم في العرض.',en:'We ship within Morocco and internationally. Delivery times and costs depend on destination and volume; we detail them in your quote.'}},
+ {kw:{fr:['qui êtes','qui etes','à propos','a propos','entreprise','expérience','experience','pourquoi','avantage','confiance'],ar:['من أنتم','عن الشركة','خبرة','لماذا','ثقة','ميزة'],en:['who are you','about','company','experience','why you','advantage','trust']},
+  a:{fr:'FIRST-BIAIS est un fabricant marocain de vêtements B2B à Casablanca 🇲🇦, avec 3 sites de production et une équipe expérimentée. Notre force : accompagnement de A à Z, flexibilité des volumes et qualité maîtrisée.',ar:'FIRST-BIAIS مصنع مغربي للملابس B2B بالدار البيضاء 🇲🇦، بثلاثة مواقع إنتاج وفريق ذي خبرة. قوتنا: مرافقة من الألف إلى الياء، مرونة في الكميات وجودة متقنة.',en:'FIRST-BIAIS is a Moroccan B2B garment manufacturer in Casablanca 🇲🇦, with 3 production sites and an experienced team. Our strength: end-to-end support, flexible volumes and controlled quality.'}},
+ {kw:{fr:['confidentiel','confidentialité','nda','secret','copier','protéger','vol'],ar:['سرية','خصوصية','حماية','سر'],en:['confidential','nda','privacy','protect','steal']},
+  a:{fr:'Vos créations restent confidentielles. Nous pouvons signer un accord de confidentialité (NDA) et nous ne réutilisons jamais vos designs. Votre marque est protégée.',ar:'تبقى إبداعاتكم سرية. يمكننا توقيع اتفاقية سرية (NDA) ولا نعيد أبداً استخدام تصاميمكم. علامتكم محمية.',en:'Your creations stay confidential. We can sign an NDA and never reuse your designs. Your brand is protected.'}},
  {kw:{fr:['merci','parfait','super','daccord','ok'],ar:['شكرا','ممتاز','حسنا','طيب'],en:['thank','thanks','perfect','great','ok']},
   a:{fr:'Avec plaisir ! 🙏 N\'hésitez pas si vous avez d\'autres questions.',ar:'بكل سرور! 🙏 لا تتردد إن كانت لديك أسئلة أخرى.',en:'My pleasure! 🙏 Feel free to ask more questions.'}}
 ];
@@ -733,22 +755,29 @@ var FALLBACK={
 </script>
 <script>
 (function(){
-/* ---- Config IA (optionnel : base locale fonctionne sans clé) ---- */
-var AI_KEY='AQ.Ab8RN6LIaJXvz_GHNTgBTxyiF9EFUxxyubzeLAAD0nd7YAH65A';
-var AI_MODEL='gemini-3.8-flash';
-var AI_ON=!!AI_KEY;
-var MAX_RETRIES=5;
+/* ---- Config IA ----
+   Mode IA activé. On essaie Gemini 3 en priorité, puis repli automatique
+   sur la version la plus récente disponible pour la clé. La base locale
+   ci-dessus reste le filet de sécurité si le réseau/l'IA ne répond pas. */
+var AI_KEY='AQ.Ab8RN6KS6iucy07sRHQzkU3DjUEUjYdMRAwFp4Yj9yEPMEvlGw';
+var AI_MODELS=['gemini-3-flash','gemini-3.0-flash','gemini-3-pro','gemini-2.5-flash','gemini-2.0-flash','gemini-1.5-flash'];
+var AI_ON=(!!AI_KEY && AI_KEY.length>5);
 var SYS={
- fr:'Tu es l\'assistant virtuel de FIRST-BIAIS, fabricant marocain de vêtements B2B basé à Casablanca (Maroc). Services : conseil, développement produit, sourcing tissu, patronage, gradation, coupe, couture, finitions, contrôle qualité, marquage, packaging. 3 sites de production au Maroc. Commande minimum ~50 pièces. Contact WhatsApp 0762 144 945 et formulaire de devis du site. Réponds en français, bref (2-4 phrases), professionnel et chaleureux. N\'invente jamais de prix précis ni de données ; oriente vers le devis. Ne parle que de FIRST-BIAIS.',
- ar:'أنت المساعد الافتراضي لشركة FIRST-BIAIS، مصنع مغربي للملابس B2B بالدار البيضاء. الخدمات: استشارة، تطوير منتج، توريد أقمشة، باترون، تدريج، قص، خياطة، تشطيب، جودة، تغليف. 3 مصانع بالمغرب. الحد الأدنى ~50 قطعة. التواصل واتساب 0762 144 945. أجب بالعربية باختصار (2-4 جمل)، بمهنية وود. لا تخترع أسعاراً. تحدث فقط عن FIRST-BIAIS.',
- en:'You are the virtual assistant of FIRST-BIAIS, a Moroccan B2B garment manufacturer in Casablanca, Morocco. Services: consulting, product development, fabric sourcing, patterns, grading, cutting, sewing, finishing, quality control, labeling, packaging. 3 production sites in Morocco. Minimum order ~50 pieces. Contact WhatsApp 0762 144 945 and the site quote form. Reply in English, short (2-4 sentences), professional and warm. Never invent exact prices or data; steer to the quote. Only talk about FIRST-BIAIS.'
+ fr:'Tu es l\'assistant IA du site FIRST-BIAIS (fabricant marocain de vêtements B2B à Casablanca, Maroc : conseil, développement produit, sourcing tissu, patronage, gradation, coupe, couture, finitions, qualité, marquage, packaging ; 3 sites au Maroc ; commande minimum ~50 pièces ; contact WhatsApp 0762 144 945 et formulaire de devis du site). Réponds de façon utile, claire et polie à TOUTES les questions du visiteur, y compris générales. Quand la question concerne FIRST-BIAIS, valorise l\'entreprise et oriente vers le devis sans inventer de prix précis. Réponds dans la langue de l\'utilisateur, de façon concise.',
+ ar:'أنت المساعد الذكي لموقع FIRST-BIAIS (مصنع مغربي للملابس B2B بالدار البيضاء: استشارة، تطوير منتج، توريد أقمشة، باترون، تدريج، قص، خياطة، تشطيب، جودة، تغليف؛ 3 مصانع بالمغرب؛ الحد الأدنى ~50 قطعة؛ واتساب 0762 144 945). أجب بشكل مفيد وواضح ومؤدّب عن كل الأسئلة، حتى العامة. عندما يتعلق الأمر بـ FIRST-BIAIS أبرز الشركة ووجّه نحو طلب العرض دون اختراع أسعار. أجب بلغة المستخدم باختصار.',
+ en:'You are the AI assistant of the FIRST-BIAIS website (Moroccan B2B garment manufacturer in Casablanca: consulting, product development, fabric sourcing, patterns, grading, cutting, sewing, finishing, quality, labeling, packaging; 3 sites in Morocco; minimum order ~50 pieces; WhatsApp 0762 144 945 and the site quote form). Answer helpfully, clearly and politely to ALL visitor questions, including general ones. When the question is about FIRST-BIAIS, promote the company and steer to the quote without inventing exact prices. Reply in the user\'s language, concisely.'
+};
+var WA={
+ fr:{t:'Pour ce type de question précise, le mieux est de parler directement à notre équipe 👇',b:'💬 Nous écrire sur WhatsApp'},
+ ar:{t:'لهذا النوع من الأسئلة، الأفضل التحدث مباشرة مع فريقنا 👇',b:'💬 راسلنا على واتساب'},
+ en:{t:'For this kind of specific question, it\'s best to talk directly to our team 👇',b:'💬 Chat with us on WhatsApp'}
 };
 function norm(s){return (s||'').toLowerCase().replace(/[أإآ]/g,'ا').replace(/[éèê]/g,'e').trim();}
 function localAnswer(txt,lang){var t=norm(txt),best=null,score=0;
  for(var i=0;i<KB.length;i++){var e=KB[i],kws=(e.kw[lang]||[]).concat(e.kw.fr||[],e.kw.en||[]),c=0;
   for(var j=0;j<kws.length;j++){if(t.indexOf(norm(kws[j]))>-1)c++;}
   if(c>score){score=c;best=e;}}
- return score>0?(best.a[lang]||best.a.fr):FALLBACK[lang];}
+ return score>0?{t:(best.a[lang]||best.a.fr),hit:true}:{t:FALLBACK[lang],hit:false};}
 var root=document.getElementById('fbai-root'),launch=document.getElementById('fbai-launch'),
  msgs=document.getElementById('fbai-msgs'),quick=document.getElementById('fbai-quick'),
  field=document.getElementById('fbai-field'),send=document.getElementById('fbai-send'),
@@ -759,6 +788,9 @@ function esc(s){var d=document.createElement('div');d.textContent=s;return d.inn
 function addMsg(who,text){var row=document.createElement('div');row.className='fbai-row '+who;
  row.innerHTML='<div class="fbai-mini">'+(who==='bot'?'🤖':'👤')+'</div><div class="fbai-bubble">'+esc(text)+'</div>';
  msgs.appendChild(row);msgs.scrollTop=msgs.scrollHeight;return row;}
+function addWhatsCTA(){var w=WA[lang]||WA.fr;var row=document.createElement('div');row.className='fbai-row bot';
+ row.innerHTML='<div class="fbai-mini">🤖</div><div class="fbai-bubble">'+esc(w.t)+'<a class="fbai-wa" href="https://wa.me/212762144945" target="_blank" rel="noopener">'+esc(w.b)+'</a></div>';
+ msgs.appendChild(row);msgs.scrollTop=msgs.scrollHeight;}
 function typing(){var row=document.createElement('div');row.className='fbai-row bot';row.dataset.t='1';
  row.innerHTML='<div class="fbai-mini">🤖</div><div class="fbai-bubble"><div class="fbai-typing"><span></span><span></span><span></span></div></div>';
  msgs.appendChild(row);msgs.scrollTop=msgs.scrollHeight;return row;}
@@ -769,26 +801,41 @@ function applyLang(l){lang=l;var u=UI[l];nameEl.textContent=u.name;statusEl.text
  langBtns.forEach(function(b){b.classList.toggle('active',b.dataset.lang===l);});buildQuick();}
 function greet(){if(greeted)return;greeted=true;addMsg('bot',UI[lang].hello);}
 function aiCall(text,cb){
- var contents=[];history.slice(-6).forEach(function(h){contents.push({role:h.role,parts:[{text:h.text}]});});
+ var contents=[];history.slice(-8).forEach(function(h){contents.push({role:h.role,parts:[{text:h.text}]});});
  contents.push({role:'user',parts:[{text:text}]});
- var url='https://generativelanguage.googleapis.com/v1beta/models/'+AI_MODEL+':generateContent?key='+AI_KEY;
- var body={contents:contents,systemInstruction:{parts:[{text:SYS[lang]}]},generationConfig:{temperature:0.6,maxOutputTokens:400}};
- var attempt=0;
- function go(){attempt++;
-  fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})
-  .then(function(r){if(r.status===503||r.status===429||r.status>=500){throw {retry:true,s:r.status};}return r.json();})
-  .then(function(d){var t=d&&d.candidates&&d.candidates[0]&&d.candidates[0].content&&d.candidates[0].content.parts&&d.candidates[0].content.parts[0]&&d.candidates[0].content.parts[0].text;
-   cb(t?t.trim():localAnswer(text,lang));})
-  .catch(function(e){if(e&&e.retry&&attempt<MAX_RETRIES){setTimeout(go,700*attempt);}else{cb(localAnswer(text,lang));}});
+ var body=JSON.stringify({contents:contents,systemInstruction:{parts:[{text:SYS[lang]}]},generationConfig:{temperature:0.7,maxOutputTokens:700}});
+ var mi=0;
+ function extract(d){try{return d.candidates[0].content.parts[0].text;}catch(e){return null;}}
+ function tryModel(){
+  if(mi>=AI_MODELS.length){cb(localAnswer(text,lang));return;}
+  var model=AI_MODELS[mi];
+  var base='https://generativelanguage.googleapis.com/v1beta/models/'+model+':generateContent';
+  attempt(base+'?key='+encodeURIComponent(AI_KEY),{'Content-Type':'application/json'},false);
+  function attempt(u,headers,isBearer){
+   fetch(u,{method:'POST',headers:headers,body:body})
+   .then(function(r){return r.json().then(function(d){return {status:r.status,d:d};}).catch(function(){return {status:r.status,d:null};});})
+   .then(function(res){
+     var t=res.d?extract(res.d):null;
+     if(t){cb({t:t.trim(),hit:true});return;}
+     var code=(res.d&&res.d.error&&res.d.error.code)||res.status;
+     if(!isBearer&&(code===401||code===403)){attempt(base,{'Content-Type':'application/json','Authorization':'Bearer '+AI_KEY},true);return;}
+     if(code===404||code===400){mi++;tryModel();return;}
+     if(code===503||code===429||code>=500){setTimeout(function(){mi++;tryModel();},600);return;}
+     cb(localAnswer(text,lang));
+   })
+   .catch(function(){mi++;tryModel();});
+  }
  }
- go();
+ tryModel();
 }
 function handle(text){text=(text||'').trim();if(!text)return;
  addMsg('user',text);history.push({role:'user',text:text});field.value='';
  var tp=typing();
- function done(ans){if(tp.parentNode)tp.parentNode.removeChild(tp);addMsg('bot',ans);history.push({role:'model',text:ans});}
- if(AI_ON){aiCall(text,function(ans){done(ans);});}
- else{setTimeout(function(){done(localAnswer(text,lang));},500);}
+ function done(res){if(tp.parentNode)tp.parentNode.removeChild(tp);
+  addMsg('bot',res.t);history.push({role:'model',text:res.t});
+  if(!res.hit)addWhatsCTA();}
+ if(AI_ON){aiCall(text,function(res){done(res);});}
+ else{setTimeout(function(){done(localAnswer(text,lang));},450);}
 }
 launch.onclick=function(){root.classList.toggle('open');if(root.classList.contains('open'))greet();};
 send.onclick=function(){handle(field.value);};
